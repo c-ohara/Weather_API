@@ -1,0 +1,12 @@
+<h1 class = "display-1 text-center">{{ city }}</h1>
+<div *ngIf="info" class = "col-6 d-inline-block">
+    <p class = "text-danger">Humidity: {{ info['main'].humidity }}</p>
+    <p class = "text-danger">Temperature: {{ info['main'].temp }}</p>
+    <ul *ngIf="info['weather']" class="list-unstyled">
+        <li class = "text-danger">Weather-- </li>
+        <li *ngFor="let element of info['weather']" class = "text-danger">{{ element.main }}: {{ element.description }}</li>
+    </ul>
+</div>
+<div class = "col-5 d-inline-block">
+    <img [src]="info['image']" class="mw-100">
+</div>

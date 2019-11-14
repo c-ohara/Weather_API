@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Weather Forecast</title>
+</head>
+<body>
+  <h1 class = "text-center display-1">Dojo Weather Forecast</h1>
+  <div class = "col-10 offset-1 d-flex justify-content-between">
+    <a [routerLink]="['/home']">Home</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/burbank']">Burbank, CA</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/chicago']">Chicago, IL</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/dallas']">Dallas, TX</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/dc']">Washington, DC</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/sanjose']">San Jose, CA</a>
+    <p class="mx-4 d-inline-block">|</p>
+    <a [routerLink]="['/seattle']">Seattle, WA</a>
+  </div>
+  <div class = "col-10 offset-1 border border-dark p-2">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+</html>
